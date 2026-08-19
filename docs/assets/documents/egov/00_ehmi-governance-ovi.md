@@ -227,6 +227,30 @@ Formålet med registreringen er:</p>
 
 <p>SMP anvendes af AP til at finde de tekniske oplysninger, der er nødvendige for at levere en meddelelse til den rette modtager. Dette omfatter blandt andet modtagerens endpoint-adresse, oplysninger om hvilke meddelelsestyper modtageren understøtter, samt de certifikater og transportoplysninger, der er nødvendige for sikker kommunikation. De metadata, der publiceres til SMP, etableres på baggrund af registreringerne i EER.</p>
 
+<details>
+  <summary>Metadata til registrering af EUA i EER</summary>
+<p><ol>
+  <li>GLN nummer for den “postkasse” du vil modtage beskeder på</li>
+<li>Et navn til din ‘postkasse’ der unikt identificerer den. Eksempelvis “EG Clinea LPS”</li>
+<li>De dokumentTyper/Standarder du kan modtage (f.eks. homecareobservation, carecommunication, acknowledgement osv.)
+<ol><li>Også hertil hørende formater som dit system forstår (f.eks, homecareobservation - xml format, carecommunication - json format osv.)</li></ol></li>
+<li>Id’et på det AP du benytter. MedCom stiller en liste til rådighed over alle AP’er i netværket, her skal du blot finde din leverandør og sende os det tilhørende ID.</li>
+<li>Evt. en dato for hvornår din registrering vil aktiveres. Hvis denne ikke indsendes vil registreringen blot blive aktiveret hurtigst muligt.</li>
+<li>Tilhørende organisations detaljer:
+<ol><li>SOR id</li>
+<li>CVR</li>
+<li>Navn</li></ol></li>
+</ol></p>
+</details>
+
+<details>
+  <summary>Metadata til registrering af MSH i EER</summary>
+</details>
+
+<details>
+  <summary>Metadata til registrering af AP i EER</summary>
+</details>
+
 </details>
 
 <br>
