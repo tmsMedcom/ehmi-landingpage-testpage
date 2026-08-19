@@ -245,12 +245,23 @@ Formålet med registreringen er:</p>
 
 <details>
   <summary>Metadata til registrering af MSH i EER</summary>
+<p><ol><li>Et unikt navn der identificerer din MSH, eksempelvis “Systematic Cura MSH”</li></ol></p>
 </details>
 
 <details>
   <summary>Metadata til registrering af AP i EER</summary>
+<p><ol>
+  <li>Et navn til dit AP der unikt identificerer den. Eksempelvis “Aarhus Kommune KIT AP”</li>
+  <li>Certifikater:
+  <ol><li>Den offentlige nøgle til eDelivery SMP’en</li>
+  <li>Den offentlige del af tilhørende MitId systemcertifikat</li></ol></li>
+  <li>Tilhørende organisations detaljer:
+    <ol><li>CVR nummer</li>
+    <li>Navn</li></ol></li>
+  <li>Support kontaktoplysninger, enten email eller telefon eller support hjemmeside</li>
+  <li>eDelivery URL adresse</li>
+</ol></p>
 </details>
-
 </details>
 
 <br>
