@@ -22,5 +22,7 @@ menuurl_item6: https://ehmi.dk/assets/documents/egov/
 menutxt_item6: EHMI Governance*
 menuurl_item7: https://ehmi.dk/assets/documents/security/
 menutxt_item7: EHMI Security
-menuurl_item8: https://ehmi.dk/assets/documents/glossary/
-menutxt_item8: EHMI Glossary
+menuurl_item8: https://ehmi.dk/assets/documents/test/
+menutxt_item8: EHMI Test
+menuurl_item9: https://ehmi.dk/assets/documents/glossary/
+menutxt_item9: EHMI Glossary
