@@ -83,7 +83,8 @@ th {
 
 </details>
 
-## MSH 
+<details> 
+<summary>Message Service Handler (MSH)</summary>
 
 ### Sending MSH (corner 1)
 
@@ -106,7 +107,10 @@ All applications must comply to the test suite "EHMI Shared ...
 #### ehmiSBDH and ehmiSBDHAcknowledgement
 
 
-## AP
+</details>
+
+<details> 
+<summary>Access Point (AP)</summary>
 
 ### Sending AP (corner 2)
 #### Registrations sent to EDS
@@ -117,10 +121,15 @@ All applications must comply to the test suite "EHMI Shared ...
 ### Receiving EMR AP (corner 3)
 #### Registrations sent to EDS
 
-## Other services
+</details>
+
+<details> 
+<summary>Other services</summary> 
 
 ### EAS
 
 ### EDS component
 
-## EER
+### EER
+
+</details>
