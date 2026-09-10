@@ -1,137 +1,155 @@
-<style>
-/* Gælder kun i HTML-browser – GitHub ignorerer dette blok */
-details {
-  margin: 1.2em 0;
-  padding: 0.5em 0.75em;
-  border-left: 3px solid #d0d7de;
-  border-radius: 0 4px 4px 0;
-}
-details[open] {
-  border-left-color: #0969da;
-  background: #f8faff;
-}
-details > summary {
-  cursor: pointer;
-  padding: 0.3em 0;
-  line-height: 1.5;
-  list-style: disclosure-closed;
-}
-details[open] > summary {
-  list-style: disclosure-open;
-  margin-bottom: 0.6em;
-}
-details > summary:hover {
-  color: #0969da;
-}
-details p, details li {
-  line-height: 1.65;
-  margin: 0.7em 0;
-}
-details details {
-  margin-top: 0.8em;
-  border-left: 2px solid #c0cad4;
-  background: transparent;
-}
-h1, h2 {
-  margin-top: 1.8em;
-}
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 1em 0;
-}
-th, td {
-  border: 1px solid #d0d7de;
-  padding: 0.5em 0.75em;
-  vertical-align: top;
-}
-th {
-  background: #f0f4f8;
-}
-</style>
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [EHMI Testspecifications](#ehmi-testspecifications)
+- [End User Application (EUA)](#end-user-application-eua)
+   * [Sending EUA (corner 1)](#sending-eua-corner-1)
+      + [Request data from EAS ](#request-data-from-eas)
+      + [Registrations sent to EDS ](#registrations-sent-to-eds)
+   * [Receiving EUA (corner 4)](#receiving-eua-corner-4)
+      + [Registrations sent to EDS](#registrations-sent-to-eds-1)
+- [Message Service Handler (MSH)](#message-service-handler-msh)
+   * [Sending MSH (corner 1)](#sending-msh-corner-1)
+      + [Registrations sent to EDS](#registrations-sent-to-eds-2)
+      + [ehmiSBDH and ehmiSBDHAcknowledgement](#ehmisbdh-and-ehmisbdhacknowledgement)
+   * [Receiving MSH (corner 4)](#receiving-msh-corner-4)
+      + [Registrations sent to EDS](#registrations-sent-to-eds-3)
+      + [ehmiSBDH and ehmiSBDHAcknowledgement](#ehmisbdh-and-ehmisbdhacknowledgement-1)
+   * [Receiving EMR MSH (corner 4)](#receiving-emr-msh-corner-4)
+      + [Registrations sent to EDS](#registrations-sent-to-eds-4)
+      + [ehmiSBDH and ehmiSBDHAcknowledgement](#ehmisbdh-and-ehmisbdhacknowledgement-2)
+- [Access Poin (AP)](#access-poin-ap)
+   * [Sending AP (corner 2)](#sending-ap-corner-2)
+      + [Registrations sent to EDS](#registrations-sent-to-eds-5)
+   * [Receiving AP (corner 3)](#receiving-ap-corner-3)
+      + [Registrations sent to EDS](#registrations-sent-to-eds-6)
+   * [Receiving EMR AP (corner 3)](#receiving-emr-ap-corner-3)
+      + [Registrations sent to EDS](#registrations-sent-to-eds-7)
+- [Other service ](#other-service)
+   * [EAS](#eas)
+   * [EDS component](#eds-component)
+   * [EER](#eer)
+
+<!-- TOC end -->
+
+<a name="ehmi-testspecifications"></a>
+
+## EHMI Testspecifications
+
+Testing is performed in the ITB testtool and with a testprotocol
+
+Corners are defined from this illustration (ehmi core --> ### Layers)
+
+<a name="end-user-application-eua"></a>
+
+## End User Application (EUA)
+
+As End User Application the system must be able to send and/or receive the messages and display the relevant content to the users of the application. Test of the standards containing the clinical content is not defined on this page, but can be found.... 
+
+In regards to communication on the EHMI infrastructure, the relevant tests for a sending and receiving application is shown. 
 
 
-<h1>EHMI Testspecifications</h1>
 
-<p>Testing is performed in the ITB testtool and with a testprotocol</p>
+<a name="sending-eua-corner-1"></a>
 
-<p>Corners are defined from this illustration (ehmi core --> ### Layers)</p>
+### Sending EUA (corner 1)
 
-<details> 
-<summary>End User Application (EUA)</summary>
+<a name="request-data-from-eas"></a>
 
-<p>As End User Application the system must be able to send and/or receive the messages and display the relevant content to the users of the application. Test of the standards containing the clinical content is not defined on this page, but can be found.... </p>
+#### Request data from EAS 
 
-<p>In regards to communication on the EHMI infrastructure, the relevant tests for a sending and receiving application is shown. </p>
+<a name="registrations-sent-to-eds"></a>
 
+#### Registrations sent to EDS 
 
-<details> 
-<summary>Sending EUA (corner 1)</summary>
+<a name="receiving-eua-corner-4"></a>
 
+### Receiving EUA (corner 4)
 
-<p>Request data from EAS <br> </p>
+<a name="registrations-sent-to-eds-1"></a>
 
-<p>Registrations sent to EDS <br> </p>
+#### Registrations sent to EDS
 
-</details>
+<a name="message-service-handler-msh"></a>
 
-<details> 
-<summary>Receiving EUA (corner 4)</summary>
+## Message Service Handler (MSH)
 
-
-<p>Registrations sent to EDS</p>
-
-</details>
-
-</details>
-
-<details> 
-<summary>Message Service Handler (MSH)</summary>
+<a name="sending-msh-corner-1"></a>
 
 ### Sending MSH (corner 1)
+
+<a name="registrations-sent-to-eds-2"></a>
 
 #### Registrations sent to EDS
 All applications must comply to the test suite "EHMI Shared ...
 
+<a name="ehmisbdh-and-ehmisbdhacknowledgement"></a>
+
 #### ehmiSBDH and ehmiSBDHAcknowledgement
+
+<a name="receiving-msh-corner-4"></a>
 
 ### Receiving MSH (corner 4)
 
+<a name="registrations-sent-to-eds-3"></a>
+
 #### Registrations sent to EDS
+
+<a name="ehmisbdh-and-ehmisbdhacknowledgement-1"></a>
 
 #### ehmiSBDH and ehmiSBDHAcknowledgement
 
+
+<a name="receiving-emr-msh-corner-4"></a>
 
 ### Receiving EMR MSH (corner 4)
 
+<a name="registrations-sent-to-eds-4"></a>
+
 #### Registrations sent to EDS
+
+<a name="ehmisbdh-and-ehmisbdhacknowledgement-2"></a>
 
 #### ehmiSBDH and ehmiSBDHAcknowledgement
 
 
-</details>
+<a name="access-poin-ap"></a>
 
-<details> 
-<summary>Access Point (AP)</summary>
+## Access Poin (AP)
+
+<a name="sending-ap-corner-2"></a>
 
 ### Sending AP (corner 2)
+<a name="registrations-sent-to-eds-5"></a>
+
 #### Registrations sent to EDS
+
+<a name="receiving-ap-corner-3"></a>
 
 ### Receiving AP (corner 3)
+<a name="registrations-sent-to-eds-6"></a>
+
 #### Registrations sent to EDS
+
+<a name="receiving-emr-ap-corner-3"></a>
 
 ### Receiving EMR AP (corner 3)
+<a name="registrations-sent-to-eds-7"></a>
+
 #### Registrations sent to EDS
 
-</details>
+<a name="other-service"></a>
 
-<details> 
-<summary>Other services</summary> 
+## Other service 
+
+<a name="eas"></a>
 
 ### EAS
 
+<a name="eds-component"></a>
+
 ### EDS component
+
+<a name="eer"></a>
 
 ### EER
 
-</details>
